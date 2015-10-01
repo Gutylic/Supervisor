@@ -112,7 +112,7 @@ td {
 
     .encabezado_panel.panel-heading.fondo {
         text-align: center;
-        height: 83px;
+        height: 35px;
     }
 
     hr {
@@ -149,7 +149,7 @@ td {
 
     .encabezado_panel.panel-heading.fondo {
         text-align: center;
-        height: 93px;
+        height: 40px;
     }
 
     hr {
@@ -169,6 +169,10 @@ td {
         font-size: 13px;
         padding: 0px;
     }
+
+        .pie_formulario {
+    height: 50px;
+}
 }
 
 @media(min-width:1200px) {
@@ -182,7 +186,7 @@ td {
 
     .encabezado_panel.panel-heading.fondo {
         text-align: center;
-        height: 103px;
+        height: 45px;
     }
 
     hr {

@@ -24,6 +24,11 @@
         font-size: 12px;
     }
 
+select#DropDownList_Dios {
+    height: 25px;
+        
+}
+
     #Boton_Buscar_Dios {
         height: 25px;
         font-size: 13px;
@@ -122,6 +127,11 @@
         font-size: 13px;
     }
 
+     select#DropDownList_Dios {
+    height: 30px;
+        
+}
+
     #Boton_Buscar_Dios {
         height: 30px;
         font-size: 13px;
@@ -184,6 +194,11 @@
         font-size: 14px;
     }
 
+select#DropDownList_Dios {
+    height: 35px;
+        
+}
+
     #Boton_Buscar_Dios {
         height: 35px;
         font-size: 14px;
@@ -240,6 +255,11 @@
         padding-left: 3px;
         font-size: 16px;
     }
+
+    select#DropDownList_Dios {
+    height: 40px;
+        
+}
 
     #Boton_Buscar_Dios {
         height: 40px;
