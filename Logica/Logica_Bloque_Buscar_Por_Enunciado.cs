@@ -96,6 +96,9 @@ namespace Logica
             Enunciado = Enunciado.Replace("&#205;", "i");
             Enunciado = Enunciado.Replace("&#211;", "o");
             Enunciado = Enunciado.Replace("&#218;", "u");
+            Enunciado = Enunciado.Replace("A", "a");
+            Enunciado = Enunciado.Replace("&#x000a0;", "");
+            Enunciado = Enunciado.Replace("<mo></mo>", "");
             return Enunciado = Enunciado.Replace("&#209;", "n");
         }
 
@@ -136,6 +139,9 @@ namespace Logica
             Linea = Linea.Replace("&#211;", "o");
             Linea = Linea.Replace("&#218;", "u");
             Linea = Linea.Replace("&#209;", "n");
+            Linea = Linea.Replace("A", "a");
+            Linea = Linea.Replace("&#x000a0;", "");
+            Linea = Linea.Replace("<mo></mo>", "");
             Linea = Linea.Trim(); // elimino los espacios delante y detras de la variable creada
             return Linea; // variable final limpia de wiris
 

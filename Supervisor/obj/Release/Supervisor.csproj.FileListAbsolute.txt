@@ -1,0 +1,10 @@
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Supervisor.dll.config
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Supervisor.dll
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Supervisor.pdb
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Datos.dll
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Logica.dll
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Datos.pdb
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\bin\Logica.pdb
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\obj\Release\Supervisor.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\obj\Release\Supervisor.dll
+C:\Users\Gustavo\Desktop\Supervisor\Supervisor\obj\Release\Supervisor.pdb

@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Activar_Oferta_Administrador.aspx">
+      <publishTime>09/29/2015 07:11:14</publishTime>
+    </File>
+    <File Include="Activar_Oferta_Dios.aspx">
+      <publishTime>09/29/2015 07:11:18</publishTime>
+    </File>
+    <File Include="Activar_Oferta_Supervisor.aspx">
+      <publishTime>09/29/2015 07:11:20</publishTime>
+    </File>
+    <File Include="Actualizar_Ejercicio_Administrador.aspx">
+      <publishTime>09/29/2015 07:11:22</publishTime>
+    </File>
+    <File Include="Actualizar_Ejercicio_Dios.aspx">
+      <publishTime>09/29/2015 07:11:26</publishTime>
+    </File>
+    <File Include="Actualizar_Ejercicio_Supervisor.aspx">
+      <publishTime>09/29/2015 07:11:28</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>09/29/2015 07:29:46</publishTime>
+    </File>
+    <File Include="bin/Datos.dll">
+      <publishTime>12/17/2015 18:45:55</publishTime>
+    </File>
+    <File Include="bin/Logica.dll">
+      <publishTime>12/17/2015 18:45:55</publishTime>
+    </File>
+    <File Include="bin/Supervisor.dll">
+      <publishTime>12/17/2015 18:45:56</publishTime>
+    </File>
+    <File Include="Cargar_Credito_Automatico_Administrador.aspx">
+      <publishTime>09/29/2015 07:11:30</publishTime>
+    </File>
+    <File Include="Cargar_Credito_Automatico_Dios.aspx">
+      <publishTime>09/29/2015 07:11:36</publishTime>
+    </File>
+    <File Include="Cargar_Credito_Automatico_Supervisor.aspx">
+      <publishTime>09/29/2015 07:11:38</publishTime>
+    </File>
+    <File Include="Cargar_Credito_Manual_Administrador.aspx">
+      <publishTime>09/29/2015 07:11:40</publishTime>
+    </File>
+    <File Include="Cargar_Credito_Manual_Dios.aspx">
+      <publishTime>09/29/2015 07:11:42</publishTime>
+    </File>
+    <File Include="Cargar_Credito_Manual_Supervisor.aspx">
+      <publishTime>09/29/2015 07:11:46</publishTime>
+    </File>
+    <File Include="Cargar_Oferta_Administrador.aspx">
+      <publishTime>09/29/2015 07:11:50</publishTime>
+    </File>
+    <File Include="Cargar_Oferta_Dios.aspx">
+      <publishTime>09/29/2015 07:11:52</publishTime>
+    </File>
+    <File Include="Cargar_Oferta_Supervisor.aspx">
+      <publishTime>09/29/2015 07:11:54</publishTime>
+    </File>
+    <File Include="Comentario_Administrador.aspx">
+      <publishTime>09/29/2015 07:11:56</publishTime>
+    </File>
+    <File Include="Comentario_Administrador_Dios.aspx">
+      <publishTime>09/29/2015 07:12:00</publishTime>
+    </File>
+    <File Include="Comentario_Administrador_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:02</publishTime>
+    </File>
+    <File Include="Comentario_Usuario_Administrador.aspx">
+      <publishTime>09/29/2015 07:12:06</publishTime>
+    </File>
+    <File Include="Comentario_Usuario_Dios.aspx">
+      <publishTime>09/29/2015 07:12:10</publishTime>
+    </File>
+    <File Include="Comentario_Usuario_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:12</publishTime>
+    </File>
+    <File Include="Compra_Ejercicios_Administrador.aspx">
+      <publishTime>09/29/2015 07:12:14</publishTime>
+    </File>
+    <File Include="Compra_Ejercicios_Dios.aspx">
+      <publishTime>09/29/2015 07:12:16</publishTime>
+    </File>
+    <File Include="Compra_Ejercicios_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:22</publishTime>
+    </File>
+    <File Include="Compra_Videos_Administrador.aspx">
+      <publishTime>09/29/2015 07:12:22</publishTime>
+    </File>
+    <File Include="Compra_Videos_Dios.aspx">
+      <publishTime>09/29/2015 07:12:26</publishTime>
+    </File>
+    <File Include="Compra_Videos_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:30</publishTime>
+    </File>
+    <File Include="Consola_De_Control.aspx">
+      <publishTime>09/29/2015 07:12:32</publishTime>
+    </File>
+    <File Include="Consumo_De_Empresa_Administrador.aspx">
+      <publishTime>09/29/2015 07:12:36</publishTime>
+    </File>
+    <File Include="Consumo_De_Empresa_Dios.aspx">
+      <publishTime>09/29/2015 07:12:38</publishTime>
+    </File>
+    <File Include="Consumo_De_Empresa_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:40</publishTime>
+    </File>
+    <File Include="Control_Administradores.aspx">
+      <publishTime>09/29/2015 07:12:44</publishTime>
+    </File>
+    <File Include="Control_Administradores_Dios.aspx">
+      <publishTime>09/29/2015 07:12:46</publishTime>
+    </File>
+    <File Include="Control_Administradores_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:50</publishTime>
+    </File>
+    <File Include="css/activar_oferta_administrador.css">
+      <publishTime>09/29/2015 07:29:18</publishTime>
+    </File>
+    <File Include="css/activar_oferta_dios.css">
+      <publishTime>09/29/2015 07:29:20</publishTime>
+    </File>
+    <File Include="css/activar_oferta_supervisor.css">
+      <publishTime>09/29/2015 07:29:24</publishTime>
+    </File>
+    <File Include="css/actualizar_ejercicio_administrador.css">
+      <publishTime>09/29/2015 07:29:24</publishTime>
+    </File>
+    <File Include="css/actualizar_ejercicio_dios.css">
+      <publishTime>09/29/2015 07:29:28</publishTime>
+    </File>
+    <File Include="css/actualizar_ejercicio_supervisor.css">
+      <publishTime>09/29/2015 07:29:30</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>09/29/2015 07:29:38</publishTime>
+    </File>
+    <File Include="css/busqueda_ejercicio.css">
+      <publishTime>09/29/2015 07:29:40</publishTime>
+    </File>
+    <File Include="css/cargar_de_credito_automatico_dios.css">
+      <publishTime>09/29/2015 07:29:42</publishTime>
+    </File>
+    <File Include="css/cargar_de_credito_automatico_supervisor.css">
+      <publishTime>09/29/2015 07:29:44</publishTime>
+    </File>
+    <File Include="css/cargar_de_credito_manual_administrador.css">
+      <publishTime>09/29/2015 07:29:46</publishTime>
+    </File>
+    <File Include="css/cargar_de_credito_manual_dios.css">
+      <publishTime>09/29/2015 07:29:48</publishTime>
+    </File>
+    <File Include="css/cargar_de_credito_manual_supervisor.css">
+      <publishTime>09/29/2015 07:29:48</publishTime>
+    </File>
+    <File Include="css/cargar_oferta_administrador.css">
+      <publishTime>09/29/2015 07:29:50</publishTime>
+    </File>
+    <File Include="css/cargar_oferta_dios.css">
+      <publishTime>09/29/2015 07:29:50</publishTime>
+    </File>
+    <File Include="css/cargar_oferta_supervisor.css">
+      <publishTime>09/29/2015 07:29:50</publishTime>
+    </File>
+    <File Include="css/carga_de_credito_automatico_administrador.css">
+      <publishTime>09/29/2015 07:29:50</publishTime>
+    </File>
+    <File Include="css/comentario_administrador.css">
+      <publishTime>09/29/2015 07:29:52</publishTime>
+    </File>
+    <File Include="css/comentario_administrador_dios.css">
+      <publishTime>09/29/2015 07:29:54</publishTime>
+    </File>
+    <File Include="css/comentario_administrador_supervisor.css">
+      <publishTime>09/29/2015 07:29:54</publishTime>
+    </File>
+    <File Include="css/comentario_usuario_administrador.css">
+      <publishTime>09/29/2015 07:29:54</publishTime>
+    </File>
+    <File Include="css/comentario_usuario_dios.css">
+      <publishTime>09/29/2015 07:29:56</publishTime>
+    </File>
+    <File Include="css/comentario_usuario_supervisor.css">
+      <publishTime>09/29/2015 07:29:58</publishTime>
+    </File>
+    <File Include="css/comprar_ejercicios_administrador.css">
+      <publishTime>09/29/2015 07:29:58</publishTime>
+    </File>
+    <File Include="css/comprar_ejercicios_dios.css">
+      <publishTime>09/29/2015 07:29:58</publishTime>
+    </File>
+    <File Include="css/comprar_ejercicios_supervisor.css">
+      <publishTime>09/29/2015 07:29:58</publishTime>
+    </File>
+    <File Include="css/comprar_videos_administrador.css">
+      <publishTime>09/29/2015 07:30:02</publishTime>
+    </File>
+    <File Include="css/comprar_videos_dios.css">
+      <publishTime>09/29/2015 07:30:00</publishTime>
+    </File>
+    <File Include="css/comprar_videos_supervisor.css">
+      <publishTime>09/29/2015 07:30:02</publishTime>
+    </File>
+    <File Include="css/consola_de_control.css">
+      <publishTime>09/29/2015 07:30:02</publishTime>
+    </File>
+    <File Include="css/consumo_de_empresa_administrador.css">
+      <publishTime>09/29/2015 07:30:04</publishTime>
+    </File>
+    <File Include="css/consumo_de_empresa_dios.css">
+      <publishTime>09/29/2015 07:30:04</publishTime>
+    </File>
+    <File Include="css/consumo_de_empresa_supervisor.css">
+      <publishTime>09/29/2015 07:30:04</publishTime>
+    </File>
+    <File Include="css/control_administradores.css">
+      <publishTime>09/29/2015 07:30:04</publishTime>
+    </File>
+    <File Include="css/control_administradores_dios.css">
+      <publishTime>09/29/2015 07:30:06</publishTime>
+    </File>
+    <File Include="css/control_administradores_supervisor.css">
+      <publishTime>09/29/2015 07:30:06</publishTime>
+    </File>
+    <File Include="css/empresas_administrador.css">
+      <publishTime>09/29/2015 07:30:08</publishTime>
+    </File>
+    <File Include="css/empresas_dios.css">
+      <publishTime>09/29/2015 07:30:08</publishTime>
+    </File>
+    <File Include="css/empresas_supervisor.css">
+      <publishTime>09/29/2015 07:30:08</publishTime>
+    </File>
+    <File Include="css/encabezado.css">
+      <publishTime>09/29/2015 07:30:10</publishTime>
+    </File>
+    <File Include="css/enunciado_por_clave.css">
+      <publishTime>09/29/2015 07:30:10</publishTime>
+    </File>
+    <File Include="css/enunciado_por_fichas.css">
+      <publishTime>09/29/2015 07:30:12</publishTime>
+    </File>
+    <File Include="css/enunciado_por_institucion.css">
+      <publishTime>09/29/2015 07:30:12</publishTime>
+    </File>
+    <File Include="css/enunciado_por_porcentajes.css">
+      <publishTime>09/29/2015 07:30:14</publishTime>
+    </File>
+    <File Include="css/enunciado_por_profundidad.css">
+      <publishTime>09/29/2015 07:30:12</publishTime>
+    </File>
+    <File Include="css/index.css">
+      <publishTime>09/29/2015 07:30:14</publishTime>
+    </File>
+    <File Include="css/insertar_ejercicio_administrador.css">
+      <publishTime>09/29/2015 07:30:14</publishTime>
+    </File>
+    <File Include="css/insertar_ejercicio_dios.css">
+      <publishTime>09/29/2015 07:30:16</publishTime>
+    </File>
+    <File Include="css/insertar_ejercicio_supervisor.css">
+      <publishTime>09/29/2015 07:30:16</publishTime>
+    </File>
+    <File Include="css/movimiento_administrador.css">
+      <publishTime>09/29/2015 07:30:16</publishTime>
+    </File>
+    <File Include="css/movimiento_dios.css">
+      <publishTime>09/29/2015 07:30:18</publishTime>
+    </File>
+    <File Include="css/movimiento_supervisor.css">
+      <publishTime>09/29/2015 07:30:18</publishTime>
+    </File>
+    <File Include="css/panel_de_control_administrador.css">
+      <publishTime>09/29/2015 07:30:20</publishTime>
+    </File>
+    <File Include="css/panel_de_control_dios.css">
+      <publishTime>09/29/2015 07:30:20</publishTime>
+    </File>
+    <File Include="css/panel_de_control_supervisor.css">
+      <publishTime>09/29/2015 07:30:20</publishTime>
+    </File>
+    <File Include="css/panel_de_control_usuario_administrador.css">
+      <publishTime>09/29/2015 07:30:20</publishTime>
+    </File>
+    <File Include="css/panel_de_control_usuario_dios.css">
+      <publishTime>09/29/2015 07:30:22</publishTime>
+    </File>
+    <File Include="css/panel_de_control_usuario_supervisor.css">
+      <publishTime>09/29/2015 07:30:22</publishTime>
+    </File>
+    <File Include="css/pedido_ejercicio_administrador.css">
+      <publishTime>09/29/2015 07:30:24</publishTime>
+    </File>
+    <File Include="css/pedido_ejercicio_dios.css">
+      <publishTime>09/29/2015 07:30:24</publishTime>
+    </File>
+    <File Include="css/pedido_ejercicio_supervisor.css">
+      <publishTime>09/29/2015 07:30:26</publishTime>
+    </File>
+    <File Include="css/pedido_explicacion_administrador.css">
+      <publishTime>09/29/2015 07:30:26</publishTime>
+    </File>
+    <File Include="css/pedido_explicacion_dios.css">
+      <publishTime>09/29/2015 07:30:26</publishTime>
+    </File>
+    <File Include="css/pedido_explicacion_supervisor.css">
+      <publishTime>09/29/2015 07:30:28</publishTime>
+    </File>
+    <File Include="css/permisos_administrador.css">
+      <publishTime>09/29/2015 07:30:28</publishTime>
+    </File>
+    <File Include="css/permisos_dios.css">
+      <publishTime>09/29/2015 07:30:28</publishTime>
+    </File>
+    <File Include="css/permisos_supervisor.css">
+      <publishTime>09/29/2015 07:30:30</publishTime>
+    </File>
+    <File Include="css/precios_administrador.css">
+      <publishTime>09/29/2015 07:30:30</publishTime>
+    </File>
+    <File Include="css/precios_dios.css">
+      <publishTime>09/29/2015 07:30:30</publishTime>
+    </File>
+    <File Include="css/precios_supervisor.css">
+      <publishTime>09/29/2015 07:30:32</publishTime>
+    </File>
+    <File Include="css/respuestas_administrador.css">
+      <publishTime>09/29/2015 07:30:32</publishTime>
+    </File>
+    <File Include="css/respuestas_dios.css">
+      <publishTime>09/29/2015 07:30:34</publishTime>
+    </File>
+    <File Include="css/respuestas_supervisor.css">
+      <publishTime>09/29/2015 07:30:34</publishTime>
+    </File>
+    <File Include="css/respuesta_de_ejercicios.css">
+      <publishTime>09/29/2015 07:30:34</publishTime>
+    </File>
+    <File Include="css/respuesta_de_videos.css">
+      <publishTime>09/29/2015 07:30:36</publishTime>
+    </File>
+    <File Include="css/tarjeta_prepaga_administrador.css">
+      <publishTime>09/29/2015 07:30:36</publishTime>
+    </File>
+    <File Include="css/tarjeta_prepaga_dios.css">
+      <publishTime>09/29/2015 07:30:36</publishTime>
+    </File>
+    <File Include="css/tarjeta_prepaga_supervisor.css">
+      <publishTime>09/29/2015 07:30:38</publishTime>
+    </File>
+    <File Include="Empresas_Administrador.aspx">
+      <publishTime>09/29/2015 07:12:52</publishTime>
+    </File>
+    <File Include="Empresas_Dios.aspx">
+      <publishTime>09/29/2015 07:12:56</publishTime>
+    </File>
+    <File Include="Empresas_Supervisor.aspx">
+      <publishTime>09/29/2015 07:12:58</publishTime>
+    </File>
+    <File Include="images/bg.jpg">
+      <publishTime>09/29/2015 07:30:40</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>09/29/2015 07:13:00</publishTime>
+    </File>
+    <File Include="Insertar_Ejercicio_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:02</publishTime>
+    </File>
+    <File Include="Insertar_Ejercicio_Dios.aspx">
+      <publishTime>09/29/2015 07:13:06</publishTime>
+    </File>
+    <File Include="Insertar_Ejercicio_Supervisor.aspx">
+      <publishTime>09/29/2015 07:13:08</publishTime>
+    </File>
+    <File Include="js/scripts.js">
+      <publishTime>09/29/2015 07:31:12</publishTime>
+    </File>
+    <File Include="Movimiento_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:10</publishTime>
+    </File>
+    <File Include="Movimiento_Dios.aspx">
+      <publishTime>09/29/2015 07:13:16</publishTime>
+    </File>
+    <File Include="Movimiento_Supervisor.aspx">
+      <publishTime>09/29/2015 07:13:16</publishTime>
+    </File>
+    <File Include="Panel_De_Control_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:20</publishTime>
+    </File>
+    <File Include="Panel_De_Control_Dios.aspx">
+      <publishTime>09/29/2015 07:13:22</publishTime>
+    </File>
+    <File Include="Panel_De_Control_Supervisor.aspx">
+      <publishTime>09/29/2015 07:13:26</publishTime>
+    </File>
+    <File Include="Panel_De_Control_Usuario_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:28</publishTime>
+    </File>
+    <File Include="Panel_De_Control_Usuario_Dios.aspx">
+      <publishTime>09/29/2015 07:13:32</publishTime>
+    </File>
+    <File Include="Panel_De_Control_Usuario_Supervisor.aspx">
+      <publishTime>09/29/2015 07:13:34</publishTime>
+    </File>
+    <File Include="Pedido_Ejercicio_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:38</publishTime>
+    </File>
+    <File Include="Pedido_Ejercicio_Dios.aspx">
+      <publishTime>09/29/2015 07:13:42</publishTime>
+    </File>
+    <File Include="Pedido_Ejercicio_Supervisor.aspx">
+      <publishTime>09/29/2015 07:13:44</publishTime>
+    </File>
+    <File Include="Pedido_Explicacion_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:48</publishTime>
+    </File>
+    <File Include="Pedido_Explicacion_Dios.aspx">
+      <publishTime>09/29/2015 07:13:50</publishTime>
+    </File>
+    <File Include="Pedido_Explicacion_Supervisor.aspx">
+      <publishTime>09/29/2015 07:13:52</publishTime>
+    </File>
+    <File Include="Permisos_Administrador.aspx">
+      <publishTime>09/29/2015 07:13:56</publishTime>
+    </File>
+    <File Include="Permisos_Dios.aspx">
+      <publishTime>09/29/2015 07:14:00</publishTime>
+    </File>
+    <File Include="Permisos_Supervisor.aspx">
+      <publishTime>09/29/2015 07:14:02</publishTime>
+    </File>
+    <File Include="Precios_Administrador.aspx">
+      <publishTime>09/29/2015 07:14:04</publishTime>
+    </File>
+    <File Include="Precios_Dios.aspx">
+      <publishTime>09/29/2015 07:14:06</publishTime>
+    </File>
+    <File Include="Precios_Supervisor.aspx">
+      <publishTime>09/29/2015 07:14:08</publishTime>
+    </File>
+    <File Include="Respuestas_Administrador.aspx">
+      <publishTime>09/29/2015 07:14:10</publishTime>
+    </File>
+    <File Include="Respuestas_Dios.aspx">
+      <publishTime>09/29/2015 07:14:12</publishTime>
+    </File>
+    <File Include="Respuestas_Supervisor.aspx">
+      <publishTime>09/29/2015 07:14:14</publishTime>
+    </File>
+    <File Include="Respuesta_De_Ejercicios.aspx">
+      <publishTime>09/29/2015 07:14:16</publishTime>
+    </File>
+    <File Include="Respuesta_De_Videos.aspx">
+      <publishTime>09/29/2015 07:14:18</publishTime>
+    </File>
+    <File Include="Tarjeta_Prepaga_Administrador.aspx">
+      <publishTime>09/29/2015 07:14:22</publishTime>
+    </File>
+    <File Include="Tarjeta_Prepaga_Dios.aspx">
+      <publishTime>09/29/2015 07:14:24</publishTime>
+    </File>
+    <File Include="Tarjeta_Prepaga_Supervisor.aspx">
+      <publishTime>09/29/2015 07:14:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/17/2015 18:45:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
