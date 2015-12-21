@@ -37,7 +37,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>12/17/2015 18:45:55</publishTime>
     </File>
     <File Include="bin/Supervisor.dll">
-      <publishTime>12/17/2015 18:45:56</publishTime>
+      <publishTime>12/21/2015 19:12:40</publishTime>
     </File>
     <File Include="Cargar_Credito_Automatico_Administrador.aspx">
       <publishTime>09/29/2015 07:11:30</publishTime>
@@ -461,6 +461,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="Respuesta_De_Videos.aspx">
       <publishTime>09/29/2015 07:14:18</publishTime>
+    </File>
+    <File Include="sefue.aspx">
+      <publishTime>12/21/2015 19:09:22</publishTime>
     </File>
     <File Include="Tarjeta_Prepaga_Administrador.aspx">
       <publishTime>09/29/2015 07:14:22</publishTime>

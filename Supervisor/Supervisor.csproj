@@ -218,6 +218,7 @@
     <Content Include="Respuestas_Supervisor.aspx" />
     <Content Include="Respuesta_De_Ejercicios.aspx" />
     <Content Include="Respuesta_De_Videos.aspx" />
+    <Content Include="sefue.aspx" />
     <Content Include="Tarjeta_Prepaga_Administrador.aspx" />
     <Content Include="Tarjeta_Prepaga_Dios.aspx" />
     <Content Include="Tarjeta_Prepaga_Supervisor.aspx" />
@@ -693,6 +694,13 @@
     </Compile>
     <Compile Include="Respuesta_De_Videos.aspx.designer.cs">
       <DependentUpon>Respuesta_De_Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sefue.aspx.cs">
+      <DependentUpon>sefue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sefue.aspx.designer.cs">
+      <DependentUpon>sefue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tarjeta_Prepaga_Administrador.aspx.cs">
       <DependentUpon>Tarjeta_Prepaga_Administrador.aspx</DependentUpon>
