@@ -34,10 +34,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>12/17/2015 18:45:55</publishTime>
     </File>
     <File Include="bin/Logica.dll">
-      <publishTime>12/17/2015 18:45:55</publishTime>
+      <publishTime>12/22/2015 02:08:32</publishTime>
     </File>
     <File Include="bin/Supervisor.dll">
-      <publishTime>12/21/2015 19:12:40</publishTime>
+      <publishTime>12/22/2015 02:08:33</publishTime>
     </File>
     <File Include="Cargar_Credito_Automatico_Administrador.aspx">
       <publishTime>09/29/2015 07:11:30</publishTime>
@@ -475,7 +475,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>09/29/2015 07:14:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/17/2015 18:45:57</publishTime>
+      <publishTime>12/22/2015 02:08:34</publishTime>
     </File>
   </ItemGroup>
 </Project>
