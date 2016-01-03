@@ -14,6 +14,10 @@
     <link href="css/cargar_de_credito_manual_administrador.css" rel="stylesheet"/>
 
     <title>Carga de Credito Automatica</title>
+
+<link rel="shortcut icon" type="image/png" href="favicon.icon" />
+<link rel="apple-touch-icon" href="img/touch-icon.png"/>
+
     
 </head>
 

@@ -15,6 +15,10 @@
 
     <title>Actualizar Ejercicios</title>
 
+<link rel="shortcut icon" type="image/png" href="favicon.icon" />
+<link rel="apple-touch-icon" href="img/touch-icon.png"/>
+
+
 </head>
 
 <body>
