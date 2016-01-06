@@ -14,6 +14,9 @@
     <link href="css/activar_oferta_dios.css" rel="stylesheet" />
 
     <title>Activar Ofertas</title>
+<link rel="shortcut icon" type="image/png" href="favicon.icon" />
+<link rel="apple-touch-icon" href="img/touch-icon.png"/>
+
 
 </head>
 

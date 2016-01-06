@@ -14,6 +14,10 @@
     <link href="css/encabezado.css" rel="stylesheet" />
     <title>Mostrar Videos</title>
 
+
+<link rel="shortcut icon" type="image/png" href="favicon.icon" />
+<link rel="apple-touch-icon" href="img/touch-icon.png"/>
+
 </head>
 
 <body>

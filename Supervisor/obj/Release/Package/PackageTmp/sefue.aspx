@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sefue.aspx.cs" Inherits="Supervisor.sefue" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sefue.aspx.cs" Inherits="Fenicia_Web.sefue" %>
 
 <!DOCTYPE html>
 
@@ -24,7 +24,9 @@
    
     <!-- CSS con los estilos-->
    
-    
+<link rel="shortcut icon" type="image/png" href="favicon.icon" />
+<link rel="apple-touch-icon" href="img/touch-icon.png"/>
+   
 </head>
 
 
@@ -47,7 +49,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12" style="text-align:center">
-                                <asp:Image ID="Image_triste" ImageUrl="~/imagen/triste.png"  Height="50%" Width="50%"  runat="server" />
+                                <asp:Image ID="Image_triste" ImageUrl="~/imagen/triste.png"  Height="100%" Width="100%"  runat="server" />
                             </div>
                             
                         </div>

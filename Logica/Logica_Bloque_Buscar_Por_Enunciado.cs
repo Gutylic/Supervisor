@@ -142,6 +142,20 @@ namespace Logica
             Linea = Linea.Replace("A", "a");
             Linea = Linea.Replace("&#x000a0;", "");
             Linea = Linea.Replace("<mo></mo>", "");
+            Linea = Linea.Replace("&#x000e1;", "a");
+            Linea = Linea.Replace("&#x000e9;", "e");
+            Linea = Linea.Replace("&#x000ed;", "i");
+            Linea = Linea.Replace("&#x000f3;", "o");
+            Linea = Linea.Replace("&#x000fa;", "u");
+            Linea = Linea.Replace("&#x000f1;", "n");
+
+            Linea = Linea.Replace("&#x000c1;", "a");
+            Linea = Linea.Replace("&#x000c9;", "e");
+            Linea = Linea.Replace("&#x000cd;", "i");
+            Linea = Linea.Replace("&#x000d3;", "o");
+            Linea = Linea.Replace("&#x000dc;", "u");
+            Linea = Linea.Replace("&#x000da;", "u");
+            Linea = Linea.Replace("&#x000fc;", "u");
             Linea = Linea.Trim(); // elimino los espacios delante y detras de la variable creada
             return Linea; // variable final limpia de wiris
 

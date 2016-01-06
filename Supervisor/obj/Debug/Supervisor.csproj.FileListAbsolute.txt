@@ -80,3 +80,13 @@ C:\Users\Gustavo\Documents\GitHub\Supervisor\Supervisor\bin\Logica.pdb
 C:\Users\Gustavo\Documents\GitHub\Supervisor\Supervisor\obj\Debug\Supervisor.csprojResolveAssemblyReference.cache
 C:\Users\Gustavo\Documents\GitHub\Supervisor\Supervisor\obj\Debug\Supervisor.dll
 C:\Users\Gustavo\Documents\GitHub\Supervisor\Supervisor\obj\Debug\Supervisor.pdb
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Supervisor.dll.config
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Supervisor.dll
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Supervisor.pdb
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Datos.dll
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Logica.dll
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Datos.pdb
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\bin\Logica.pdb
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\obj\Debug\Supervisor.csprojResolveAssemblyReference.cache
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\obj\Debug\Supervisor.dll
+C:\Users\Mara\Documents\GitHub\Supervisor\Supervisor\obj\Debug\Supervisor.pdb
