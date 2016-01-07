@@ -100,9 +100,7 @@ namespace Supervisor
             if (LBIED.Logica_Insertar_Ejercicio(Titulo, int.Parse(Tipo_De_Ejercicio), int.Parse(Tipo_De_Institucion), bool.Parse(Explicacion_Realizada), Enunciado_MATH, Enunciado_Limpio, Ubicacion_Imprimible_Respuesta, Ubicacion_Ejercicio_Respuesta, Ubicacion_Video, Etiqueta_Busqueda_Ano, Etiqueta_Busqueda_Colegio, Etiqueta_Busqueda_Materia, Etiqueta_Busqueda_Profesor, Etiqueta_Busqueda_Tema) == 1)
             {
                 Ejercicio_Dios.Text ="Ejercicio nº: " + LBIED.Logica_Numero_De_Ejercicio_Insertado().ToString() + " insertado";
-                string alerta = @"alert('Ejercicio insertado correctamente'); 
-
-                window.location.reload();";
+                string alerta = @"alert('Ejercicio insertado correctamente'); ";
 
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
                 return;
