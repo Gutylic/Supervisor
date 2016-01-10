@@ -33,6 +33,30 @@ string Etiqueta_Busqueda_Tema, int Identificador)
             BAED.Cargar_Tema(var1, var2, var3);
         }
 
+        public void Logica_Cargar_Tema_XML(int var1, string var2, int var3)
+        {
+            BAED.Cargar_Tema_XML(var1, var2, var3);
+        }
+
+        public void Logica_Cargar_Profesor_XML(int var1, string var2, int var3)
+        {
+            BAED.Cargar_Profesor_XML(var1, var2, var3);
+        }
+
+        public void Logica_Cargar_Materia_XML(int var1, string var2, int var3)
+        {
+            BAED.Cargar_Materia_XML(var1, var2, var3);
+        }
+        public void Logica_Cargar_Ano_XML(int var1, string var2, int var3)
+        {
+            BAED.Cargar_Ano_XML(var1, var2, var3);
+        }
+
+        public void Logica_Cargar_Colegio_XML(int var1, string var2, int var3)
+        {
+            BAED.Cargar_Colegio_XML(var1, var2, var3);
+        }
+
         public void Logica_Cargar_Sinonimo_Tema(string var1, string var2, string var3)
         {
             BAED.Cargar_Sinonimo_Tema(var1, var2, var3);

@@ -148,7 +148,7 @@ namespace Supervisor
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
                 Subir_Ejercicio_Dios.SaveAs(saveXML);
 
-                XElement doc = XElement.Load(Server.MapPath("xml/Anos.xml"));
+                XElement doc = XElement.Load(Server.MapPath("xml/Ano.xml"));
                 List<Tabla> Lista = (from item in doc.Elements("Elementos")
                                      select new Tabla()
                                      {
@@ -160,14 +160,11 @@ namespace Supervisor
 
                 LBAED.Logica_Borrar_Anos();
 
-                for (int I = 0; I <= Lista.Count - 1; I++)
+                foreach (Tabla item in Lista)
                 {
                     Tabla_De_Anos Etiqueta_Final = new Tabla_De_Anos();
-                    Etiqueta_Final.Ano = Lista[I].Dato;
-                    Etiqueta_Final.Etiqueta_Ano = int.Parse(Lista[I].Etiqueta);
-                    db.Tabla_De_Anos.InsertOnSubmit(Etiqueta_Final);
-                    db.SubmitChanges();
 
+                    LBAED.Logica_Cargar_Ano_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
                 string alerta = @"alert('Acción realizada correctamente');";
@@ -196,7 +193,7 @@ namespace Supervisor
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
                 Subir_Ejercicio_Dios.SaveAs(saveXML);
 
-                XElement doc = XElement.Load(Server.MapPath("xml/Materias.xml"));
+                XElement doc = XElement.Load(Server.MapPath("xml/Materia.xml"));
                 List<Tabla> Lista = (from item in doc.Elements("Elementos")
                                      select new Tabla()
                                      {
@@ -208,14 +205,11 @@ namespace Supervisor
 
                 LBAED.Logica_Borrar_Materias();
 
-                for (int I = 0; I <= Lista.Count - 1; I++)
+                foreach (Tabla item in Lista)
                 {
                     Tabla_De_Materias Etiqueta_Final = new Tabla_De_Materias();
-                    Etiqueta_Final.Materia = Lista[I].Dato;
-                    Etiqueta_Final.Etiqueta_Materia = int.Parse(Lista[I].Etiqueta);
-                    db.Tabla_De_Materias.InsertOnSubmit(Etiqueta_Final);
-                    db.SubmitChanges();
 
+                    LBAED.Logica_Cargar_Materia_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
                 string alerta = @"alert('Acción realizada correctamente');";
@@ -241,7 +235,7 @@ namespace Supervisor
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
                 Subir_Ejercicio_Dios.SaveAs(saveXML);
 
-                XElement doc = XElement.Load(Server.MapPath("xml/Profesores.xml"));
+                XElement doc = XElement.Load(Server.MapPath("xml/Profesor.xml"));
                 List<Tabla> Lista = (from item in doc.Elements("Elementos")
                                      select new Tabla()
                                      {
@@ -253,14 +247,11 @@ namespace Supervisor
 
                 LBAED.Logica_Borrar_Profesores();
 
-                for (int I = 0; I <= Lista.Count - 1; I++)
+                foreach (Tabla item in Lista)
                 {
                     Tabla_De_Profesores Etiqueta_Final = new Tabla_De_Profesores();
-                    Etiqueta_Final.Profesor = Lista[I].Dato;
-                    Etiqueta_Final.Etiqueta_Profesor = int.Parse(Lista[I].Etiqueta);
-                    db.Tabla_De_Profesores.InsertOnSubmit(Etiqueta_Final);
-                    db.SubmitChanges();
 
+                    LBAED.Logica_Cargar_Profesor_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
                 string alerta = @"alert('Acción realizada correctamente');";
@@ -286,7 +277,7 @@ namespace Supervisor
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
                 Subir_Ejercicio_Dios.SaveAs(saveXML);
 
-                XElement doc = XElement.Load(Server.MapPath("xml/Colegios.xml"));
+                XElement doc = XElement.Load(Server.MapPath("xml/Colegio.xml"));
                 List<Tabla> Lista = (from item in doc.Elements("Elementos")
                                      select new Tabla()
                                      {
@@ -298,14 +289,11 @@ namespace Supervisor
 
                 LBAED.Logica_Borrar_Colegios();
 
-                for (int I = 0; I <= Lista.Count - 1; I++)
+                foreach (Tabla item in Lista)
                 {
                     Tabla_De_Colegios Etiqueta_Final = new Tabla_De_Colegios();
-                    Etiqueta_Final.Colegio = Lista[I].Dato;
-                    Etiqueta_Final.Etiqueta_Colegio = int.Parse(Lista[I].Etiqueta);
-                    db.Tabla_De_Colegios.InsertOnSubmit(Etiqueta_Final);
-                    db.SubmitChanges();
 
+                    LBAED.Logica_Cargar_Colegio_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
                 string alerta = @"alert('Acción realizada correctamente');";
@@ -331,7 +319,7 @@ namespace Supervisor
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
                 Subir_Ejercicio_Dios.SaveAs(saveXML);
 
-                XElement doc = XElement.Load(Server.MapPath("xml/Temas.xml"));
+                XElement doc = XElement.Load(Server.MapPath("xml/Tema.xml"));
                 List<Tabla> Lista = (from item in doc.Elements("Elementos")
                                      select new Tabla()
                                      {
@@ -343,15 +331,14 @@ namespace Supervisor
 
                 LBAED.Logica_Borrar_Temas();
 
-                for (int I = 0; I <= Lista.Count - 1; I++)
+
+                foreach (Tabla item in Lista)
                 {
                     Tabla_De_Temas Etiqueta_Final = new Tabla_De_Temas();
-                    Etiqueta_Final.Tema = Lista[I].Dato;
-                    Etiqueta_Final.Etiqueta_Tema = int.Parse(Lista[I].Etiqueta);
-                    db.Tabla_De_Temas.InsertOnSubmit(Etiqueta_Final);
-                    db.SubmitChanges();
-
+                    
+                    LBAED.Logica_Cargar_Tema_XML(int.Parse(item.ID), item.Dato,int.Parse(item.Etiqueta));
                 }
+                                   
 
                 string alerta = @"alert('Acción realizada correctamente');";
 

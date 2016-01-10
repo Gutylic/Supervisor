@@ -726,6 +726,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ejercicios\" />
+    <Folder Include="XML\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">

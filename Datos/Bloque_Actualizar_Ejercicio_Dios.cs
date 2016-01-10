@@ -32,6 +32,31 @@ string Etiqueta_Busqueda_Tema, int Identificador)
             db.Temas(var1, var2, var3);
         }
 
+        public void Cargar_Tema_XML(int var1, string var2, int var3)
+        {
+            db.Tabla_XML_Temas(var1, var2, var3);
+        }
+
+        public void Cargar_Ano_XML(int var1, string var2, int var3)
+        {
+            db.Tabla_XML_Anos(var1, var2, var3);
+        }
+
+        public void Cargar_Colegio_XML(int var1, string var2, int var3)
+        {
+            db.Tabla_XML_Colegios(var1, var2, var3);
+        }
+
+        public void Cargar_Profesor_XML(int var1, string var2, int var3)
+        {
+            db.Tabla_XML_Profesores(var1, var2, var3);
+        }
+
+        public void Cargar_Materia_XML(int var1, string var2, int var3)
+        {
+            db.Tabla_XML_Materias(var1, var2, var3);
+        }
+
         public void Cargar_Sinonimo_Tema(string var1, string var2, string var3)
         {
             db.Sinonimos_Temas(var1, var2, var3);

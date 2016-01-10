@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Supervisor" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=GUSTAVO;Initial Catalog=Supervisor;Integrated Security=True" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="SupervisorConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-U6J54HF;Initial Catalog=Supervisor;Integrated Security=True" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="SupervisorConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Tabla_Busqueda_De_Ejercicios_Por_Etiquetas" Member="Tabla_Busqueda_De_Ejercicios_Por_Etiquetas">
     <Type Name="Tabla_Busqueda_De_Ejercicios_Por_Etiquetas">
       <Column Name="ID_Ejercicio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -2441,5 +2441,35 @@
       <Column Name="Administrador_Bloqueado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="IP_Address" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.Tabla_XML_Temas" Method="Tabla_XML_Temas">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Tema" Parameter="tema" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="Etiqueta" Parameter="etiqueta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Tabla_XML_Anos" Method="Tabla_XML_Anos">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Tema" Parameter="tema" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Etiqueta" Parameter="etiqueta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Tabla_XML_Colegios" Method="Tabla_XML_Colegios">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Tema" Parameter="tema" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Etiqueta" Parameter="etiqueta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Tabla_XML_Materias" Method="Tabla_XML_Materias">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Tema" Parameter="tema" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Etiqueta" Parameter="etiqueta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Tabla_XML_Profesores" Method="Tabla_XML_Profesores">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Tema" Parameter="tema" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Etiqueta" Parameter="etiqueta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

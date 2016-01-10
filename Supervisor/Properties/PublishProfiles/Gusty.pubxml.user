@@ -31,13 +31,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>01/07/2016 01:48:05</publishTime>
     </File>
     <File Include="bin/Datos.dll">
-      <publishTime>01/07/2016 02:36:23</publishTime>
+      <publishTime>01/10/2016 01:17:16</publishTime>
     </File>
     <File Include="bin/Logica.dll">
-      <publishTime>01/07/2016 02:36:23</publishTime>
+      <publishTime>01/10/2016 01:17:16</publishTime>
     </File>
     <File Include="bin/Supervisor.dll">
-      <publishTime>01/07/2016 02:36:24</publishTime>
+      <publishTime>01/10/2016 01:17:17</publishTime>
     </File>
     <File Include="Cargar_Credito_Automatico_Administrador.aspx">
       <publishTime>01/07/2016 01:48:03</publishTime>
