@@ -143,6 +143,14 @@ namespace Supervisor
 
             if (Subir_Ejercicio_Dios.HasFile)
             {
+                if (Subir_Ejercicio_Dios.FileName != "Ano.xml")
+                {
+                    string alerta = @"alert('Tabla no correspondiente');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                    return;
+                }
+
                 string fileName = Path.GetFileNameWithoutExtension(Subir_Ejercicio_Dios.FileName);
 
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
@@ -167,16 +175,16 @@ namespace Supervisor
                     LBAED.Logica_Cargar_Ano_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
-                string alerta = @"alert('Acción realizada correctamente');";
+                string alerta_1 = @"alert('Acción realizada correctamente');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
             else
             {
-                string alerta = @"alert('Error al insertar la tabla');";
+                string alerta_1 = @"alert('Error al insertar la tabla');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
 
@@ -188,6 +196,14 @@ namespace Supervisor
         {
             if (Subir_Ejercicio_Dios.HasFile)
             {
+                if (Subir_Ejercicio_Dios.FileName != "Materia.xml")
+                {
+                    string alerta = @"alert('Tabla no correspondiente');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                    return;
+                }
+
                 string fileName = Path.GetFileNameWithoutExtension(Subir_Ejercicio_Dios.FileName);
 
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
@@ -212,16 +228,16 @@ namespace Supervisor
                     LBAED.Logica_Cargar_Materia_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
-                string alerta = @"alert('Acción realizada correctamente');";
+                string alerta_1 = @"alert('Acción realizada correctamente');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
             else
             {
-                string alerta = @"alert('Error al insertar la tabla');";
+                string alerta_1 = @"alert('Error al insertar la tabla');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
         }
@@ -230,6 +246,15 @@ namespace Supervisor
         {
             if (Subir_Ejercicio_Dios.HasFile)
             {
+
+                if (Subir_Ejercicio_Dios.FileName != "Profesor.xml")
+                {
+                    string alerta = @"alert('Tabla no correspondiente');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                    return;
+                }
+
                 string fileName = Path.GetFileNameWithoutExtension(Subir_Ejercicio_Dios.FileName);
 
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
@@ -254,16 +279,16 @@ namespace Supervisor
                     LBAED.Logica_Cargar_Profesor_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
-                string alerta = @"alert('Acción realizada correctamente');";
+                string alerta_1 = @"alert('Acción realizada correctamente');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
             else
             {
-                string alerta = @"alert('Error al insertar la tabla');";
+                string alerta_1 = @"alert('Error al insertar la tabla');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
         }
@@ -272,7 +297,20 @@ namespace Supervisor
         {
             if (Subir_Ejercicio_Dios.HasFile)
             {
+
+                if (Subir_Ejercicio_Dios.FileName != "Colegio.xml")
+                {
+                    string alerta = @"alert('Tabla no correspondiente');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                    return;
+                }
+
+
                 string fileName = Path.GetFileNameWithoutExtension(Subir_Ejercicio_Dios.FileName);
+
+
+                
 
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
                 Subir_Ejercicio_Dios.SaveAs(saveXML);
@@ -296,16 +334,16 @@ namespace Supervisor
                     LBAED.Logica_Cargar_Colegio_XML(int.Parse(item.ID), item.Dato, int.Parse(item.Etiqueta));
                 }
 
-                string alerta = @"alert('Acción realizada correctamente');";
+                string alerta_1 = @"alert('Acción realizada correctamente');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
             else
             {
-                string alerta = @"alert('Error al insertar la tabla');";
+                string alerta_1 = @"alert('Error al insertar la tabla');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
         }
@@ -314,6 +352,14 @@ namespace Supervisor
         {
             if (Subir_Ejercicio_Dios.HasFile)
             {
+                if (Subir_Ejercicio_Dios.FileName != "Tema.xml")
+                {
+                    string alerta = @"alert('Tabla no correspondiente');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                    return;
+                }
+
                 string fileName = Path.GetFileNameWithoutExtension(Subir_Ejercicio_Dios.FileName);
 
                 string saveXML = Path.Combine(Server.MapPath("~/xml"), Subir_Ejercicio_Dios.FileName);
@@ -340,16 +386,16 @@ namespace Supervisor
                 }
                                    
 
-                string alerta = @"alert('Acción realizada correctamente');";
+                string alerta_1 = @"alert('Acción realizada correctamente');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
             else
             {
-                string alerta = @"alert('Error al insertar la tabla');";
+                string alerta_1 = @"alert('Error al insertar la tabla');";
 
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta_1, true);
                 return;
             }
         }
