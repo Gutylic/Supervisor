@@ -25,10 +25,13 @@ namespace Supervisor
             Etiqueta_Hora_Grande.Text = DateTime.Now.ToString();
             Etiqueta_Hora_Chica.Text = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
             Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
-            Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();   
-               
-            Condiciones_Paginacion_Dios();
-            Mostrar_Datos_Dios(0);
+            Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
+
+            if (!Page.IsPostBack) // se carga la primera vez al abrir la pagina
+            {
+                Condiciones_Paginacion_Dios();
+                Mostrar_Datos_Dios(0);
+            }
 
               
             

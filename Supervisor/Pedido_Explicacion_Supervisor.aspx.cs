@@ -30,8 +30,11 @@ namespace Supervisor
             Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
             Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
 
-            Condiciones_Paginacion_Supervisor();
-            Mostrar_Datos_Supervisor(0);
+            if (!Page.IsPostBack) // se carga la primera vez al abrir la pagina
+            {
+                Condiciones_Paginacion_Supervisor();
+                Mostrar_Datos_Supervisor(0);
+            }
         }
 
         protected void Volver_A_Consola_Click(object sender, EventArgs e)

@@ -33,12 +33,13 @@ namespace Supervisor
                 Etiqueta_Hora_Grande.Text = DateTime.Now.ToString();
                 Etiqueta_Hora_Chica.Text = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
                 Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
-                Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();         
+                Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();     
+                Condiciones_Paginacion_Dios(string.Empty, string.Empty);
+                Mostrar_Datos_Dios(string.Empty, string.Empty, 0);           
             }
 
             
-            Condiciones_Paginacion_Dios(string.Empty, string.Empty);
-            Mostrar_Datos_Dios(string.Empty, string.Empty, 0);            
+                 
           
         }
 

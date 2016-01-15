@@ -211,15 +211,6 @@ namespace Supervisor {
         protected global::System.Web.UI.WebControls.LinkButton Anterior_Dios_Medio;
         
         /// <summary>
-        /// Control UpdatePanel_Botonera.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel_Botonera;
-        
-        /// <summary>
         /// Control Formulario_Dios.
         /// </summary>
         /// <remarks>
@@ -247,13 +238,22 @@ namespace Supervisor {
         protected global::System.Web.UI.WebControls.Button Boton_Archivo_Ficha_Dios;
         
         /// <summary>
-        /// Control Boton_Archivo_Enunciado_Dios.
+        /// Control Boton_Archivo_Enunciado_Dios_MATH.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Dios;
+        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Dios_MATH;
+        
+        /// <summary>
+        /// Control Boton_Archivo_Enunciado_Dios_CLEAN.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Dios_CLEAN;
         
         /// <summary>
         /// Control Etiqueta_Usuario_Dios.

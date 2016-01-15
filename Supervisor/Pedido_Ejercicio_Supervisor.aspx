@@ -37,7 +37,7 @@
 
      <form id="form1" runat="server">
      
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+       
             
         <div class="container">
                
@@ -152,8 +152,7 @@
             </div>
         </div>
            
-        <asp:UpdatePanel ID="UpdatePanel_Botonera" runat="server">
-            <ContentTemplate>
+      
                 <div class="container" id="Formulario_Supervisor" runat="server" visible="false" >
                     <div class="row">
                         <div class="col-xs-12"> 
@@ -175,8 +174,11 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-xs-4 control-label formulario">Enunciado</label>    
-                                                <div class="col-xs-8">
-                                                    <asp:Button ID="Boton_Archivo_Enunciado_Supervisor" runat="server" Text="Bajar Enunciado" CssClass="btn btn-primary btn_pedido" Width="100%" OnClick="Boton_Archivo_Enunciado_Supervisor_Click" />
+                                                <div class="col-xs-4">
+                                                    <asp:Button ID="Boton_Archivo_Enunciado_Supervisor_MATH" runat="server" Text="MATH" CssClass="btn btn-primary btn_pedido" Width="100%" OnClick="Boton_Archivo_Enunciado_Supervisor_Click" />
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <asp:Button ID="Boton_Archivo_Enunciado_Supervisor_CLEAN" runat="server" Text="Limpio" CssClass="btn btn-primary btn_pedido" Width="100%" OnClick="Boton_Archivo_Enunciado_Supervisor_CLEAN_Click" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -249,8 +251,7 @@
                     </div>
                 </div>
             </div>
-                 </ContentTemplate>
-        </asp:UpdatePanel>
+              
         
             <hr />
             <footer>

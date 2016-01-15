@@ -34,7 +34,8 @@ namespace Supervisor
                 Etiqueta_Hora_Chica.Text = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
                 Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
                 Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
-
+                Condiciones_Paginacion_Supervisor((int)Session["Variable_ID_Empresa"], string.Empty);
+                Mostrar_Datos_Supervisor((int)Session["Variable_ID_Empresa"], string.Empty, 0);
             }
 
 
@@ -45,8 +46,7 @@ namespace Supervisor
                 return;
                 
             }
-            Condiciones_Paginacion_Supervisor((int)Session["Variable_ID_Empresa"], string.Empty);
-            Mostrar_Datos_Supervisor((int)Session["Variable_ID_Empresa"], string.Empty, 0);
+            
             
         }
 

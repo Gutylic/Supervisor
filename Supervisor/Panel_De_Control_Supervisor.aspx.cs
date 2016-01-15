@@ -40,8 +40,11 @@ namespace Supervisor
                 return;
             }
 
-            Condiciones_Paginacion_Supervisor(string.Empty);
-            Mostrar_Datos_Supervisor(string.Empty, 0);
+            if (!Page.IsPostBack) // se carga la primera vez al abrir la pagina
+            {
+                Condiciones_Paginacion_Supervisor(string.Empty);
+                Mostrar_Datos_Supervisor(string.Empty, 0);
+            }
 
         }
 

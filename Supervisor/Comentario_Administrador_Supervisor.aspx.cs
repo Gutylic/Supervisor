@@ -39,7 +39,8 @@ namespace Supervisor
                 Etiqueta_Hora_Chica.Text = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
                 Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
                 Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
-                            
+                Condiciones_Paginacion_Supervisor();
+                Mostrar_Datos_Supervisor(0);     
             }
             if (LBCAS.Logica_Contar_Comentarios((int)Session["Variable_ID_Empresa"]) == null)
             {
@@ -48,8 +49,7 @@ namespace Supervisor
                 return;
             }
 
-            Condiciones_Paginacion_Supervisor();
-            Mostrar_Datos_Supervisor(0);
+            
         }
 
         protected void Volver_A_Consola_Click(object sender, EventArgs e)

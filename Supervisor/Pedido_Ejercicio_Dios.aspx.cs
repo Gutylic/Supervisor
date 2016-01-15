@@ -30,8 +30,11 @@ namespace Supervisor
             Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
             Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
 
-            Condiciones_Paginacion_Dios();
-            Mostrar_Datos_Dios(0);
+            if (!Page.IsPostBack) // se carga la primera vez al abrir la pagina
+            {
+                Condiciones_Paginacion_Dios();
+                Mostrar_Datos_Dios(0);
+            }
         }
 
         protected void Volver_A_Consola_Click(object sender, EventArgs e)
@@ -174,6 +177,8 @@ namespace Supervisor
                 return;
 
             }
+            Response.Clear();
+            Response.ContentType = "application/octet-stream";
             Response.AppendHeader("Content-Disposition", "attachment; filename=" + (string)Session["Adjunto"]);
             Response.TransmitFile("C:\\archivo/" + (string)Session["Adjunto"]);
             Response.End();
@@ -181,8 +186,10 @@ namespace Supervisor
 
         protected void Boton_Archivo_Ficha_Dios_Click(object sender, EventArgs e)
         {
-            Response.AppendHeader("Content-Disposition", "attachment; filename=" + (string)Session["Ficha"]);
-            Response.TransmitFile("C:\\archivo/" + (string)Session["Ficha"]);
+            Response.Clear();
+            Response.ContentType = "application/octet-stream";
+            Response.AppendHeader("Content-Disposition", "attachment; filename=" + (string)Session["Ficha"] + "_ficha.txt");
+            Response.TransmitFile("C:\\archivo/" + (string)Session["Ficha"] + "_ficha.txt");          
             Response.End();
         }
 
@@ -194,9 +201,28 @@ namespace Supervisor
                 return;
 
             }
-            Response.AppendHeader("Content-Disposition", "attachment; filename=" + (string)Session["Enunciado"]);
-            Response.TransmitFile("C:\\archivo/" + (string)Session["Enunciado"]);
+            Response.Clear();
+            Response.ContentType = "application/octet-stream";
+            Response.AppendHeader("Content-Disposition", "attachment; filename=" + (string)Session["Enunciado"] + "_math.txt");    
+            Response.TransmitFile("C:\\archivo/" + (string)Session["Enunciado"] + "_math.txt");
             Response.End();
+            
+        }
+
+        protected void Boton_Archivo_Enunciado_Dios_CLEAN_Click(object sender, EventArgs e)
+        {
+            if (Session["Enunciado"] == null)
+            {
+                ScriptManager.RegisterClientScriptBlock(Page, typeof(string), "", "alert('No hay enunciado');", true);
+                return;
+
+            }
+            Response.Clear();
+            Response.ContentType = "application/octet-stream";
+            Response.AppendHeader("Content-Disposition", "attachment; filename=" + (string)Session["Enunciado"] + "_clean.txt");
+            Response.TransmitFile("C:\\archivo/" + (string)Session["Enunciado"] + "_clean.txt");
+            Response.End();
+
         }
         #endregion
     }

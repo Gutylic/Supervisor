@@ -33,7 +33,10 @@ namespace Supervisor
                 Etiqueta_Hora_Grande.Text = DateTime.Now.ToString();
                 Etiqueta_Hora_Chica.Text = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
                 Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
-                Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();  
+                Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
+                Session["Opcion"] = 1;
+                Condiciones_Paginacion_Dios(null);
+                Mostrar_Datos_Dios(null, 0);
             }
            
             Session["Buscar"] = string.Empty;
@@ -57,9 +60,7 @@ namespace Supervisor
                 Buscar_Dios.Visible = false;
             }
             
-            Session["Opcion"] = 1;
-            Condiciones_Paginacion_Dios(null);
-            Mostrar_Datos_Dios(null, 0);
+            
             
         }
 

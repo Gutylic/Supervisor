@@ -22,15 +22,6 @@ namespace Supervisor {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control ScriptManager1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
-        /// <summary>
         /// Control Administrador_chico.
         /// </summary>
         /// <remarks>
@@ -211,15 +202,6 @@ namespace Supervisor {
         protected global::System.Web.UI.WebControls.LinkButton Siguiente_Supervisor_Medio;
         
         /// <summary>
-        /// Control UpdatePanel_Botonera.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel_Botonera;
-        
-        /// <summary>
         /// Control Formulario_Supervisor.
         /// </summary>
         /// <remarks>
@@ -247,13 +229,22 @@ namespace Supervisor {
         protected global::System.Web.UI.WebControls.Button Boton_Archivo_Ficha_Supervisor;
         
         /// <summary>
-        /// Control Boton_Archivo_Enunciado_Supervisor.
+        /// Control Boton_Archivo_Enunciado_Supervisor_MATH.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Supervisor;
+        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Supervisor_MATH;
+        
+        /// <summary>
+        /// Control Boton_Archivo_Enunciado_Supervisor_CLEAN.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Supervisor_CLEAN;
         
         /// <summary>
         /// Control Etiqueta_Usuario_Supervisor.

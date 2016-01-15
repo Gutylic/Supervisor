@@ -247,13 +247,22 @@ namespace Supervisor {
         protected global::System.Web.UI.WebControls.Button Boton_Archivo_Ficha_Administrador;
         
         /// <summary>
-        /// Control Boton_Archivo_Enunciado_Administrador.
+        /// Control Boton_Archivo_Enunciado_Administrador_MATH.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Administrador;
+        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Administrador_MATH;
+        
+        /// <summary>
+        /// Control Boton_Archivo_Enunciado_Administrador_CLEAN.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Boton_Archivo_Enunciado_Administrador_CLEAN;
         
         /// <summary>
         /// Control Etiqueta_Usuario_Administrador.
