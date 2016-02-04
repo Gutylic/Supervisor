@@ -163,9 +163,12 @@
                                     </div>
                                     <div class="form-group" >
                                         <label class="col-sm-4 control-label formulario">Enunciado</label>
-                                        <div class="col-sm-8">
-                                            <asp:Button ID="Boton_Archivo_Enunciado_Administrador" runat="server" Text="Bajar Enunciado" CssClass="btn btn-primary btn_pedido" Width="100%" OnClick="Boton_Archivo_Enunciado_Administrador_Click" />
-                                        </div>
+                                        <div class="col-xs-4">
+                                                    <asp:Button ID="Boton_Archivo_Enunciado_Administrador_MATH" runat="server" Text="MATH" CssClass="btn btn-primary btn_pedido" Width="100%" OnClick="Boton_Archivo_Enunciado_Administrador_Click" />
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <asp:Button ID="Boton_Archivo_Enunciado_Administrador_CLEAN" runat="server" Text="Limpio" CssClass="btn btn-primary btn_pedido" Width="100%" OnClick="Boton_Archivo_Enunciado_Administrador_CLEAN_Click" />
+                                                </div>
                                     </div>                                                                                
                                     <div class="form-group" >
                                         <label class="col-sm-4 control-label formulario">Usuario</label>
