@@ -29,14 +29,18 @@ namespace Supervisor
                 Etiqueta_Hora_Chica.Text = DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString();
                 Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
                 Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();    
-                Condiciones_Paginacion_Dios();
-                Mostrar_Datos_Dios(0);
+                
             }
             if (LBCAD.Logica_Contar_Comentarios() == null)
             {
                 Extremo_Dios.Visible = false;
                 Interno_Dios.Visible = false;
                 return;
+            }
+            else
+            { 
+                Condiciones_Paginacion_Dios();
+                Mostrar_Datos_Dios(0);
             }
 
             

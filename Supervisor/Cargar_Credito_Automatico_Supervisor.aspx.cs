@@ -10,6 +10,10 @@ using System.IO;
 using System.Net;
 using Logica;
 using Datos;
+using mercadopago;
+using System.Collections;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 
 namespace Supervisor
@@ -279,6 +283,12 @@ namespace Supervisor
             {
                 return;
             }
+
+            MP mp = new MP("7071654091217780", "F4SUQfv2CA4YUvPj0VsFROGywMkcYvyC");
+            JObject payment_info = mp.getPaymentInfo(Request["id"]);
+
+            string mensaje = payment_info["response"].ToString();
+
 
             List<string> lista = new List<string>();
 
