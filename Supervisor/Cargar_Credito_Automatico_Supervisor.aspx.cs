@@ -467,6 +467,7 @@ namespace Supervisor
             lista.Add("identidad");
 
             XElement xml = new XElement("pagos");
+            XElement xml_total = new XElement("pagos");
 
             string registro = "";
             if (fecha != string.Empty)
@@ -474,20 +475,24 @@ namespace Supervisor
 
                 string[] dato = fecha.Split('/');
 
-                registro = "&fecha=" + dato[2] + dato[0] + dato[1];
+                registro = "&fecha=" + dato[2] + dato[1] + dato[0];
 
             }
 
-            string url = LBCAS.Obtener_URL_Cuenta_Digital((int)Session["Variable_ID_Empresa"]) + registro;
-           
+            string url = "http://www.colegioeba.com/pagos/cuentadigital/" + registro + ".xml";
+            string url_total = "http://www.colegioeba.com/pagos/mercadopago/" + registro + "total.xml";
 
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+            HttpWebRequest req_total = (HttpWebRequest)WebRequest.Create(url_total);
 
             HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
+            HttpWebResponse resp_total = (HttpWebResponse)req_total.GetResponse();
 
             StreamReader reader = new StreamReader(resp.GetResponseStream());
+            StreamReader reader_total = new StreamReader(resp_total.GetResponseStream());
 
             string HTML = reader.ReadToEnd();
+            string HTML_total = reader.ReadToEnd();
 
             if (HTML == "")
             {
@@ -505,10 +510,10 @@ namespace Supervisor
             }
 
             string[] nombre_de_archivo = HTML.Split('|');
-
+            string[] nombre_de_archivo_Total = HTML_total.Split('|');
 
             string[] etiqueta_primaria = HTML.Split('\n');
-
+            string[] etiqueta_primaria_total = HTML_total.Split('\n');
 
             foreach (string ep in etiqueta_primaria)
             {
@@ -536,25 +541,35 @@ namespace Supervisor
 
             }
 
-            if (!File.Exists("c:\\pagos/Cuenta_Digital/" + (string)Session["Empresa"] + nombre_de_archivo[0] + ".xml"))
+            foreach (string ep in etiqueta_primaria_total)
             {
+                if (ep == "")
+                {
 
-                xml.Save("c:\\pagos/Cuenta_Digital/" + (string)Session["Empresa"] +  nombre_de_archivo[0] + ".xml");
+                    break;
+                }
+
+                XElement pago = new XElement("pago");
+                string[] subcadena = ep.Split('|');
+                int pos = 0;
+
+                foreach (string es in subcadena)
+                {
+
+                    XElement etiqueta_secundaria = new XElement(string.Format(lista[pos]));
+                    etiqueta_secundaria.Add(es);
+                    pago.Add(etiqueta_secundaria);
+                    pos += 1;
+
+                }
+
+                xml_total.Add(pago);
 
             }
-            else
-            {
 
-                string script = @"<script type='text/javascript'>
-                                alert('Esta fecha ya fue cargada a la base de datos');
-                                </script>";
-
-                ScriptManager.RegisterClientScriptBlock(this, typeof(Page), "alerta", script, false);
-
-                return;
-
-            }
-
+            xml.Save("c:\\pagos/Cuenta_Digital/" + (string)Session["Empresa"] +  nombre_de_archivo[0] + ".xml");
+            xml.Save("c:\\pagos/Cuenta_Digital/" + (string)Session["Empresa"] + nombre_de_archivo[0] + "total.xml");
+            
             XDocument doc = XDocument.Load("c:\\pagos/Cuenta_Digital/" + (string)Session["Empresa"] + nombre_de_archivo[0] + ".xml");
 
             var query = from m in doc.Descendants("pago")
