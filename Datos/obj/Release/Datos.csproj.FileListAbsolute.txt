@@ -13,3 +13,4 @@ C:\Users\Gustavo\Documents\GitHub\Supervisor\Datos\bin\Release\Datos.dll
 C:\Users\Gustavo\Documents\GitHub\Supervisor\Datos\bin\Release\Datos.pdb
 C:\Users\Gustavo\Documents\GitHub\Supervisor\Datos\obj\Release\Datos.dll
 C:\Users\Gustavo\Documents\GitHub\Supervisor\Datos\obj\Release\Datos.pdb
+C:\Users\Gustavo\Documents\GitHub\Supervisor\Datos\obj\Release\Datos.csprojResolveAssemblyReference.cache

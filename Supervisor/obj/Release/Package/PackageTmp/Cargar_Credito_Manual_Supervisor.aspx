@@ -199,14 +199,15 @@
                                         </div>
                                         <div class="col-sm-9">
                                              <asp:DropDownList ID="DropDownList_Carga" runat="server" >                            
-                                                <asp:ListItem Value ="13">No Resolucion</asp:ListItem>
-                                                <asp:ListItem Value ="16">Rapipago</asp:ListItem>
-                                                <asp:ListItem Value ="17">Cuenta Digital</asp:ListItem>   
+                                                <asp:ListItem Value ="13">No Resolución</asp:ListItem>                                                
+                                                <asp:ListItem Value ="16">Rapipago / Pagofacil</asp:ListItem>
+                                                <asp:ListItem Value ="17">CuentaDigital</asp:ListItem>   
                                                 <asp:ListItem Value ="18">Mercado Pago</asp:ListItem>
                                                 <asp:ListItem Value ="19">Transferencia Bancaria</asp:ListItem>        
-                                                <asp:ListItem Value ="34">Carga de Creditouenta Digital</asp:ListItem>   
+                                                <asp:ListItem Value ="34">Carga de Crédito</asp:ListItem>   
                                                 <asp:ListItem Value ="35">Cobro por excedente</asp:ListItem>
                                                 <asp:ListItem Value ="36">Nota debito</asp:ListItem>
+                                                <asp:ListItem Value ="38">PayPal</asp:ListItem>
                                             </asp:DropDownList>
                                         </div>
                                     </div>                                    

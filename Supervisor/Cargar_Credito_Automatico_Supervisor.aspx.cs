@@ -260,7 +260,7 @@ namespace Supervisor
                         Premio_2 = 0;
                     }
 
-                    LBCAS.Logica_Insetar_Carga_Automatica(m.monto * decimal.Parse(Conversion_Dolares_A_Pesos.Text), ID_Usuario, 15, Premio_1, Premio_2);
+                    LBCAS.Logica_Insetar_Carga_Automatica(m.monto * decimal.Parse(Conversion_Dolares_A_Pesos.Text), ID_Usuario, 38, Premio_1, Premio_2);
 
                 }
 
@@ -418,7 +418,7 @@ namespace Supervisor
                     Premio_2 = 0;
                 }
 
-                LBCAS.Logica_Insetar_Carga_Automatica(m.monto * decimal.Parse(Conversion_Dolares_A_Pesos.Text), ID_Usuario, 15, Premio_1, Premio_2);
+                LBCAS.Logica_Insetar_Carga_Automatica(m.monto, ID_Usuario, 18, Premio_1, Premio_2);
 
 
             }
