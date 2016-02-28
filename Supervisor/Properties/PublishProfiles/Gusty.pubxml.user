@@ -6,7 +6,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Gustavo\Desktop\CD</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Gustavo\Desktop\Supervi</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Activar_Oferta_Administrador.aspx">
@@ -43,7 +43,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>09/06/2013 08:44:02</publishTime>
     </File>
     <File Include="bin/Supervisor.dll">
-      <publishTime>02/24/2016 15:40:44</publishTime>
+      <publishTime>02/27/2016 22:30:31</publishTime>
     </File>
     <File Include="Cargar_Credito_Automatico_Administrador.aspx">
       <publishTime>02/03/2016 00:35:44</publishTime>
