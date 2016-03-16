@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sefue.aspx.cs" Inherits="Fenicia_Web.sefue" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sefue.aspx.cs" Inherits="Supervisor.sefue" %>
 
 <!DOCTYPE html>
 
