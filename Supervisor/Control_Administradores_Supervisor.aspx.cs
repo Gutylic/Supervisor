@@ -27,7 +27,7 @@ namespace Supervisor
             
             if (!Page.IsPostBack) // se carga la primera vez al abrir la pagina
             {
-
+                if (Session["Buscar"] != null) { Session["Buscar"] = null; }
                 Etiqueta_Administrador_Chico.Text = ((string)Session["Administrador"]).ToUpper();
                 Etiqueta_Administrador_Grande.Text = ((string)Session["Administrador"]).ToUpper();
                 Etiqueta_Hora_Grande.Text = DateTime.Now.ToString();
@@ -124,6 +124,7 @@ namespace Supervisor
         #region GridView_Supervisor
         public void Mostrar_Datos_Supervisor(int ID_Empresa, string Administrador, int Pagina)
         {
+            if (Session["Buscar"] == null) { Administrador = string.Empty; }
             if (Administrador == null) { Administrador = string.Empty; }
             GridView_Supervisor.DataSource = LBCAS.Logica_Control_Administradores(Administrador, ID_Empresa).Skip(Pagina * 20).Take(20);
             GridView_Supervisor.DataBind();
@@ -135,6 +136,7 @@ namespace Supervisor
         {
             Condiciones_Paginacion_Supervisor((int)Session["Variable_ID_Empresa"], Buscar_Supervisor.Text); // paginacion
             Session["Buscar"] = Buscar_Supervisor.Text; // carga la variable de session para enviar a la paginacion
+            if (Buscar_Supervisor.Text == string.Empty) { Session["Buscar"] = null; }
             Mostrar_Datos_Supervisor((int)Session["Variable_ID_Empresa"], Buscar_Supervisor.Text, 0); // llama al gridview
         }
         #endregion

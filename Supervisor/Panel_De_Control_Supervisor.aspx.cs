@@ -217,8 +217,7 @@ namespace Supervisor
             int Valor = LBPDCS.Logica_Borrar_Administradores((int)Session["ID_Administrador"]); // Borrar el administrador
             if (Valor == 1) // todo ok
             {
-                string alerta = @"alert('Administrador / Supervisor borrado correctamente'); 
-                window.location.reload();";
+                string alerta = @"alert('Administrador / Supervisor borrado correctamente');";
 
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
                 return;

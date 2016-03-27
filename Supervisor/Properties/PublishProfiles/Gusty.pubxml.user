@@ -43,7 +43,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>03/11/2016 01:31:07</publishTime>
     </File>
     <File Include="bin/Supervisor.dll">
-      <publishTime>03/17/2016 02:33:13</publishTime>
+      <publishTime>03/23/2016 21:59:16</publishTime>
     </File>
     <File Include="Cargar_Credito_Automatico_Administrador.aspx">
       <publishTime>03/11/2016 01:31:02</publishTime>

@@ -189,9 +189,7 @@ namespace Supervisor
                 ScriptManager.RegisterClientScriptBlock(Page, typeof(string), "", "alert('Error en algunos datos insertados');", true);
                 return;
             }
-            string alerta = @"alert('Administrador / Supervisor actualizado correctamente'); 
-
-                window.location.reload();";
+            string alerta = @"alert('Administrador / Supervisor actualizado correctamente');";
 
             ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
             return;
@@ -243,9 +241,7 @@ namespace Supervisor
             int Valor = LBPDCD.Logica_Borrar_Administradores((int)Session["ID_Administrador"]); // Borrar el administrador
             if (Valor == 1) // todo ok
             {
-                string alerta = @"alert('Administrador / Supervisor borrado correctamente'); 
-
-                window.location.reload();";
+                string alerta = @"alert('Administrador / Supervisor borrado correctamente');";
 
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta, true);
                 return;
