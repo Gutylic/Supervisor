@@ -88,7 +88,7 @@
                             <div class="panel-body cuerpo_panel"> 
                                 <div class="row">  
                                     <div class="col-sm-12">
-                                        <asp:Image ID="Respuesta_Del_Ejercicio" runat="server" Visible="false" Width="100%" />
+                                        <asp:Image ID="Respuesta_Del_Ejercicio" runat="server" Width="100%" />
                                     </div>                                        
                                 </div>
                                

@@ -22,7 +22,7 @@ namespace Supervisor
             Etiqueta_Localizador_Grande.Text = Request.UserHostAddress.ToString();
             Etiqueta_Localizador_Chico.Text = Request.UserHostAddress.ToString();
 
-            Respuesta_Del_Ejercicio.ImageUrl = "http:\\www.colegioeba.com\respuesta_imprimible" + Request.QueryString["Ejercicio"] + ".png";
+            Respuesta_Del_Ejercicio.ImageUrl = "http://www.colegioeba.com/respuesta_imprimible/" + Request.QueryString["Ejercicio"] + ".png";
          
         }
 
